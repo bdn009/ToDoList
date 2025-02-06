@@ -33,10 +33,14 @@ document.getElementById('addTaskBtn').addEventListener('click', function(){
     taskNumber.innerText=taskLength;
 
     addTask.value = "";
+
+    taskCheckbox.addEventListener('click', function(){
+        if(taskCheckbox.checked){
+            taskTitle.classList.add('line-through')
+        }
+    });
     
-})
-
-
+});
 
 // document.addEventListener('click', function(){
 //     document.getElementById('addTaskBtn');
