@@ -28,9 +28,15 @@ document.getElementById('addTaskBtn').addEventListener('click', function(){
     task.appendChild(taskTitle)
     taskList.appendChild(task)
 
+    const taskNumber=document.getElementById('taskNumbers');
+    const taskLength=taskList.children.length;
+    taskNumber.innerText=taskLength;
+
     addTask.value = "";
     
 })
+
+
 
 // document.addEventListener('click', function(){
 //     document.getElementById('addTaskBtn');
