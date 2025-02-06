@@ -40,10 +40,6 @@ document.getElementById('addTaskBtn').addEventListener('click', function(){
             }
         });
     }
-    
-
-    
-    
 });
 
 // document.addEventListener('click', function(){
