@@ -37,6 +37,8 @@ document.getElementById('addTaskBtn').addEventListener('click', function(){
         taskCheckbox.addEventListener('click', function(){
             if(taskCheckbox.checked){
                 taskTitle.classList.add('line-through')
+                const audio=new Audio('complete_sound-98972.mp3');
+                audio.play();
             }
         });
     }
